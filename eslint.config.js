@@ -10,9 +10,66 @@ export default [
   {
     ignores: ['node_modules/**', 'dist/**', '.angular/**', 'coverage/**'],
   },
+  // TypeScript test files
+  {
+    files: ['**/*.spec.ts'],
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: {
+        project: './tsconfig.spec.json',
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+      globals: {
+        console: 'readonly',
+        window: 'readonly',
+        document: 'readonly',
+        navigator: 'readonly',
+        localStorage: 'readonly',
+        sessionStorage: 'readonly',
+        fetch: 'readonly',
+        describe: 'readonly',
+        it: 'readonly',
+        expect: 'readonly',
+        beforeEach: 'readonly',
+        afterEach: 'readonly',
+        beforeAll: 'readonly',
+        afterAll: 'readonly',
+        jasmine: 'readonly',
+        spyOn: 'readonly',
+      },
+    },
+    plugins: {
+      '@typescript-eslint': tseslint,
+      '@angular-eslint': angular,
+    },
+    rules: {
+      ...eslint.configs.recommended.rules,
+      ...tseslint.configs['recommended'].rules,
+      ...angular.configs['recommended'].rules,
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
+      '@typescript-eslint/naming-convention': [
+        'error',
+        {
+          selector: 'interface',
+          format: ['PascalCase'],
+          prefix: ['I'],
+        },
+      ],
+    },
+  },
   // TypeScript files
   {
     files: ['**/*.ts'],
+    ignores: ['**/*.spec.ts'],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -28,6 +85,7 @@ export default [
         localStorage: 'readonly',
         sessionStorage: 'readonly',
         fetch: 'readonly',
+        process: 'readonly',
       },
     },
     plugins: {
