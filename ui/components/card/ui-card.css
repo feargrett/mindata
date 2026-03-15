@@ -25,6 +25,10 @@
   @apply flex items-center gap-2;
 }
 
+.card-icon {
+  @apply text-on-background-variant flex-shrink-0;
+}
+
 .card-label {
   @apply font-inter text-on-background-variant text-base font-bold;
 }
