@@ -1,7 +1,9 @@
 @import '../theme/base.css';
 
 .section {
-  @apply p-4;
+  @apply p-4 py-8;
+  @apply md:py-12;
+  @apply lg:py-16;
 }
 
 .section__container {
