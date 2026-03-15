@@ -1,7 +1,7 @@
 @import '../theme/base.css';
 
 .section {
-  @apply p-8;
+  @apply p-4;
 }
 
 .section__container {
