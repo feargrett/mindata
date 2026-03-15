@@ -1,5 +1,1 @@
 @import '../../../../ui/components/theme/base.css';
-
-section {
-  @apply bg-gray-100;
-}

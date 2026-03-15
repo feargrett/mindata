@@ -1,0 +1,9 @@
+@import '../theme/base.css';
+
+.section {
+  @apply p-8;
+}
+
+.section__container {
+  @apply container mx-auto max-w-screen-2xl;
+}
