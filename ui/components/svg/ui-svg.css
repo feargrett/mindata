@@ -1,0 +1,5 @@
+svg {
+  @apply flex-shrink-0;
+  color: inherit;
+  display: inline-block;
+}

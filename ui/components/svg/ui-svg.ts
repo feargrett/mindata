@@ -1,0 +1,14 @@
+import { Component, ChangeDetectionStrategy, input } from '@angular/core';
+import { IconName } from './icon-name.type';
+
+@Component({
+  selector: 'ui-svg',
+  templateUrl: './ui-svg.html',
+  styleUrl: './ui-svg.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class UiSvgComponent {
+  icon = input.required<IconName>();
+  width = input<number>(24);
+  height = input<number>(24);
+}

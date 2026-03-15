@@ -23,10 +23,10 @@
 
 .card-header {
   @apply flex items-center gap-2;
-}
 
-.card-icon {
-  @apply text-on-background-variant flex-shrink-0;
+  ui-svg {
+    @apply text-on-background-variant;
+  }
 }
 
 .card-label {

@@ -1,10 +1,11 @@
 import { Component, ChangeDetectionStrategy, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { UiButtonComponent } from '../button/ui-button';
+import { UiSvgComponent } from '../svg/ui-svg';
 
 @Component({
   selector: 'ui-card',
-  imports: [NgOptimizedImage, UiButtonComponent],
+  imports: [NgOptimizedImage, UiButtonComponent, UiSvgComponent],
   templateUrl: './ui-card.html',
   styleUrl: './ui-card.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
