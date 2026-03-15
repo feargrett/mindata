@@ -1,19 +1,18 @@
 @import '../theme/base.css';
 
 .card {
-  @apply flex gap-6 rounded-lg bg-white p-6 shadow-md;
+  @apply flex flex-col gap-6 rounded-lg bg-white p-6 shadow-md;
+  @apply lg:flex-row;
   max-width: 100%;
 }
 
 .card-image {
-  @apply flex-shrink-0;
-  width: 723px;
+  @apply w-full flex-shrink-0;
+  @apply lg:w-[723px];
   aspect-ratio: 723 / 416;
 
   img {
     @apply h-auto w-full rounded-lg object-cover;
-    max-width: 723px;
-    max-height: 416px;
   }
 }
 
@@ -35,10 +34,12 @@
 
 .card-title {
   @apply font-inter text-on-background text-2xl font-bold;
+  @apply line-clamp-2;
 }
 
 .card-description {
   @apply font-inter text-on-background-variant text-base;
+  @apply line-clamp-6;
   flex: 1;
 }
 
