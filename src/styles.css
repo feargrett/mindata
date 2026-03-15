@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'tailwindcss';
+@import '../ui/components/theme/base.css';
+
+body {
+  @apply font-inter text-base text-gray-900;
+}

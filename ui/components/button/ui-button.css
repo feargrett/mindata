@@ -1,0 +1,24 @@
+@import '../theme/base.css';
+
+button {
+  @apply h-10 gap-2.5 rounded-lg px-2 opacity-100;
+  @apply flex items-center justify-center;
+  @apply bg-primary text-white;
+  @apply font-inter text-base font-bold;
+  @apply transition-opacity;
+  @apply cursor-pointer;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+
+  &:hover {
+    @apply opacity-80;
+  }
+
+  &:focus-visible {
+    outline-color: var(--color-highlight);
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+}

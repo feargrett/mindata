@@ -15,6 +15,7 @@
   "insertPragma": false,
   "proseWrap": "preserve",
   "requirePragma": false,
+  "plugins": ["prettier-plugin-tailwindcss"],
   "overrides": [
     {
       "files": "*.html",
