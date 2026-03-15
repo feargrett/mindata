@@ -1,9 +1,17 @@
 @import '../theme/base.css';
 
 .card {
-  @apply flex flex-col gap-6 rounded-lg bg-white p-6 shadow-md;
+  @apply flex flex-col gap-6 rounded-lg bg-white;
   @apply lg:flex-row;
   @apply max-w-full;
+}
+
+.card--shadow {
+  @apply shadow-md;
+}
+
+.card--padding {
+  @apply p-6;
 }
 
 .card__image {

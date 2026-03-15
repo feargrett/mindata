@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { UiCardComponent } from '@ui/components/card/ui-card';
 import { UiSectionComponent } from '@ui/components/section/ui-section';
+import { data, cardsData } from '@mocks/data';
 
 @Component({
   selector: 'app-home',
@@ -9,4 +10,7 @@ import { UiSectionComponent } from '@ui/components/section/ui-section';
   styleUrl: './home.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Home {}
+export class Home {
+  cardData = data;
+  cardsData = cardsData;
+}

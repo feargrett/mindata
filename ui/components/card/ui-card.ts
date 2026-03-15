@@ -1,4 +1,9 @@
-import { Component, ChangeDetectionStrategy, input } from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  input,
+  computed,
+} from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { UiButtonComponent } from '../button/ui-button';
 import { UiSvgComponent } from '../svg/ui-svg';
@@ -17,4 +22,13 @@ export class UiCardComponent {
   description = input<string>('Description');
   buttonLabel = input<string>('Click me');
   buttonDisabled = input<boolean>(false);
+  showShadow = input<boolean>(true);
+  withPadding = input<boolean>(true);
+
+  cardClasses = computed(() => {
+    const classes = [];
+    if (this.showShadow()) classes.push('card--shadow');
+    if (this.withPadding()) classes.push('card--padding');
+    return classes.join(' ');
+  });
 }

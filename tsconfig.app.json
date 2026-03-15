@@ -8,7 +8,8 @@
     "baseUrl": ".",
     "paths": {
       "@ui/components": ["ui/components"],
-      "@ui/components/*": ["ui/components/*"]
+      "@ui/components/*": ["ui/components/*"],
+      "@mocks/*": ["src/mocks/*"]
     }
   },
   "include": ["src/**/*.ts", "ui/**/*.ts"],

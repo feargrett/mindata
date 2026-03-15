@@ -1,8 +1,34 @@
 <ui-section bgColor="gray">
   <ui-card
-    label="Lorem ipsum dolor sit amet"
-    title="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna."
-    buttonLabel="Lorem ipsum"
+    [label]="cardData.label"
+    [title]="cardData.title"
+    [description]="cardData.description"
+    [buttonLabel]="cardData.buttonLabel"
   />
+</ui-section>
+
+<ui-section bgColor="white">
+  <header class="mb-8 text-left">
+    <h2 class="font-inter text-on-background text-4xl font-bold">
+      Lorem ipsum dolor sit
+    </h2>
+    <p class="font-inter text-on-background-variant mt-2 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </p>
+  </header>
+
+  <div
+    class="grid grid-cols-1 gap-6 min-[460px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
+  >
+    @for (card of cardsData; track card.id) {
+      <ui-card
+        [label]="card.label"
+        [title]="card.title"
+        [description]="card.description"
+        [buttonLabel]="card.buttonLabel"
+        [withPadding]="false"
+        [showShadow]="false"
+      />
+    }
+  </div>
 </ui-section>
