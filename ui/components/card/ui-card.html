@@ -1,5 +1,5 @@
 <article class="card">
-  <div class="card-image">
+  <div class="card__image">
     <img
       [ngSrc]="imageUrl()"
       alt="Card image"
@@ -9,17 +9,17 @@
     />
   </div>
 
-  <div class="card-content">
-    <div class="card-header">
-      <ui-svg icon="calendar" />
-      <span class="card-label">{{ label() }}</span>
+  <div class="card__content">
+    <div class="card__header">
+      <ui-svg class="card__icon" icon="calendar" />
+      <span class="card__label">{{ label() }}</span>
     </div>
 
-    <h2 class="card-title">{{ title() }}</h2>
+    <h2 class="card__title">{{ title() }}</h2>
 
-    <p class="card-description">{{ description() }}</p>
+    <p class="card__description">{{ description() }}</p>
 
-    <div class="card-footer">
+    <div class="card__footer">
       <ui-button [disabled]="buttonDisabled()">{{ buttonLabel() }}</ui-button>
     </div>
   </div>

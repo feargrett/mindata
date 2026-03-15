@@ -6,7 +6,7 @@
   max-width: 100%;
 }
 
-.card-image {
+.card__image {
   @apply w-full flex-shrink-0;
   @apply lg:w-[723px];
   aspect-ratio: 723 / 416;
@@ -16,33 +16,33 @@
   }
 }
 
-.card-content {
+.card__content {
   @apply flex flex-1 flex-col gap-4;
 }
 
-.card-header {
+.card__header {
   @apply flex items-center gap-2;
-
-  ui-svg {
-    @apply text-on-background-variant;
-  }
 }
 
-.card-label {
+.card__icon {
+  @apply text-on-background-variant;
+}
+
+.card__label {
   @apply font-inter text-on-background-variant text-base font-bold;
 }
 
-.card-title {
+.card__title {
   @apply font-inter text-on-background text-2xl font-bold;
   @apply line-clamp-2;
 }
 
-.card-description {
+.card__description {
   @apply font-inter text-on-background-variant text-base;
   @apply line-clamp-6;
   flex: 1;
 }
 
-.card-footer {
+.card__footer {
   @apply flex items-center justify-end;
 }
