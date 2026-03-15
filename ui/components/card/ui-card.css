@@ -3,13 +3,13 @@
 .card {
   @apply flex flex-col gap-6 rounded-lg bg-white p-6 shadow-md;
   @apply lg:flex-row;
-  max-width: 100%;
+  @apply max-w-full;
 }
 
 .card__image {
   @apply w-full flex-shrink-0;
   @apply lg:w-[723px];
-  aspect-ratio: 723 / 416;
+  @apply aspect-[723/416];
 
   img {
     @apply h-auto w-full rounded-lg object-cover;
@@ -18,6 +18,7 @@
 
 .card__content {
   @apply flex flex-1 flex-col gap-4;
+  @apply min-w-0;
 }
 
 .card__header {
@@ -35,14 +36,17 @@
 .card__title {
   @apply font-inter text-on-background text-2xl font-bold;
   @apply line-clamp-2;
+  @apply min-w-0;
 }
 
 .card__description {
   @apply font-inter text-on-background-variant text-base;
   @apply line-clamp-6;
-  flex: 1;
+  @apply lg:line-clamp-[8];
+  @apply min-w-0;
 }
 
 .card__footer {
   @apply flex items-center justify-end;
+  @apply mt-auto;
 }
