@@ -19,8 +19,10 @@
 
     <p class="card__description">{{ description() }}</p>
 
-    <div class="card__footer">
-      <ui-button [disabled]="buttonDisabled()">{{ buttonLabel() }}</ui-button>
-    </div>
+    @if (buttonLabel()) {
+      <div class="card__footer">
+        <ui-button [disabled]="buttonDisabled()">{{ buttonLabel() }}</ui-button>
+      </div>
+    }
   </div>
 </article>

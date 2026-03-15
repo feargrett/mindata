@@ -6,6 +6,10 @@
   @apply max-w-full;
 }
 
+.card--vertical {
+  @apply !flex-col;
+}
+
 .card--shadow {
   @apply shadow-md;
 }
@@ -22,6 +26,10 @@
   img {
     @apply h-auto w-full rounded-lg object-cover;
   }
+}
+
+.card--vertical .card__image {
+  @apply !w-full;
 }
 
 .card__content {
@@ -52,6 +60,10 @@
   @apply line-clamp-6;
   @apply lg:line-clamp-[8];
   @apply min-w-0;
+}
+
+.card--vertical .card__description {
+  @apply !line-clamp-6;
 }
 
 .card__footer {
