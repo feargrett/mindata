@@ -1,0 +1,43 @@
+@import '../theme/base.css';
+
+.card {
+  @apply flex gap-6 rounded-lg bg-white p-6 shadow-md;
+  max-width: 100%;
+}
+
+.card-image {
+  @apply flex-shrink-0;
+  width: 723px;
+  aspect-ratio: 723 / 416;
+
+  img {
+    @apply h-auto w-full rounded-lg object-cover;
+    max-width: 723px;
+    max-height: 416px;
+  }
+}
+
+.card-content {
+  @apply flex flex-1 flex-col gap-4;
+}
+
+.card-header {
+  @apply flex items-center gap-2;
+}
+
+.card-label {
+  @apply font-inter text-on-background-variant text-base font-bold;
+}
+
+.card-title {
+  @apply font-inter text-on-background text-2xl font-bold;
+}
+
+.card-description {
+  @apply font-inter text-on-background-variant text-base;
+  flex: 1;
+}
+
+.card-footer {
+  @apply flex items-center justify-end;
+}

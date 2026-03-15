@@ -3,5 +3,7 @@
 @theme {
   --color-primary: #e4002b;
   --color-highlight: #00ccff;
+  --color-on-background: #000000;
+  --color-on-background-variant: #343a40;
   --font-inter: Inter, sans-serif;
 }
