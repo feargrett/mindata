@@ -21,7 +21,7 @@ export const cardsData = Array.from({ length: 6 }, (_, i) => ({
 export const imageCardsData = Array.from({ length: 4 }, (_, i) => ({
   id: i + 1,
   imageUrl: `https://picsum.photos/400/600?random=${i}`,
-  title: `Hero Card ${i + 1}: Lorem ipsum dolor sit amet`,
+  title: `Card ${i + 1}: Lorem ipsum dolor sit amet`,
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.',
   buttonLabel: 'Lorem ipsum',
