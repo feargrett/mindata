@@ -1,6 +1,6 @@
-export { UiButtonComponent } from './button/ui-button';
-export { UiCardComponent } from './card/ui-card';
-export { UiCardImageComponent } from './card-image/ui-card-image';
-export { UiSectionComponent } from './section/ui-section';
-export { UiSvgComponent } from './svg/ui-svg';
+export { UIButtonComponent } from './button/button';
+export { UICardComponent } from './card/card';
+export { UICardImageComponent } from './card-image/card-image';
+export { UISectionComponent } from './section/section';
+export { UISvgComponent } from './svg/svg';
 export type { IconName } from './svg/icon-name.type';

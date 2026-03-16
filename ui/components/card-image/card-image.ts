@@ -1,17 +1,17 @@
 import { Component, ChangeDetectionStrategy, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { UiButtonComponent } from '../button/ui-button';
-import { UiSvgComponent } from '../svg/ui-svg';
+import { UIButtonComponent } from '../button/button';
+import { UISvgComponent } from '../svg/svg';
 import type { IconName } from '../svg/icon-name.type';
 
 @Component({
   selector: 'ui-card-image',
-  imports: [NgOptimizedImage, UiButtonComponent, UiSvgComponent],
-  templateUrl: './ui-card-image.html',
-  styleUrl: './ui-card-image.css',
+  imports: [NgOptimizedImage, UIButtonComponent, UISvgComponent],
+  templateUrl: './card-image.html',
+  styleUrl: './card-image.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiCardImageComponent {
+export class UICardImageComponent {
   imageUrl = input<string>('https://picsum.photos/400/600');
   title = input.required<string>();
   description = input.required<string>();

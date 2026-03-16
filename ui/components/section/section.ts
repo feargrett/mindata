@@ -7,11 +7,11 @@ import {
 
 @Component({
   selector: 'ui-section',
-  templateUrl: './ui-section.html',
-  styleUrl: './ui-section.css',
+  templateUrl: './section.html',
+  styleUrl: './section.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiSectionComponent {
+export class UISectionComponent {
   bgColor = input<'white' | 'gray'>('white');
 
   bgClass = computed(() => {

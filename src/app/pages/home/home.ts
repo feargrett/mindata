@@ -1,12 +1,18 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { UiCardComponent } from '@ui/components/card/ui-card';
-import { UiCardImageComponent } from '@ui/components/card-image/ui-card-image';
-import { UiSectionComponent } from '@ui/components/section/ui-section';
+import { UICardComponent } from '@ui/components/card/card';
+import { UICardImageComponent } from '@ui/components/card-image/card-image';
+import { UISectionComponent } from '@ui/components/section/section';
+import { HeaderComponent } from './components/header/header';
 import { data, cardsData, imageCardsData } from '@mocks/data';
 
 @Component({
   selector: 'app-home',
-  imports: [UiCardComponent, UiCardImageComponent, UiSectionComponent],
+  imports: [
+    UICardComponent,
+    UICardImageComponent,
+    UISectionComponent,
+    HeaderComponent,
+  ],
   templateUrl: './home.html',
   styleUrl: './home.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

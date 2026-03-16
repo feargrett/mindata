@@ -5,17 +5,17 @@ import {
   computed,
 } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { UiButtonComponent } from '../button/ui-button';
-import { UiSvgComponent } from '../svg/ui-svg';
+import { UIButtonComponent } from '../button/button';
+import { UISvgComponent } from '../svg/svg';
 
 @Component({
   selector: 'ui-card',
-  imports: [NgOptimizedImage, UiButtonComponent, UiSvgComponent],
-  templateUrl: './ui-card.html',
-  styleUrl: './ui-card.css',
+  imports: [NgOptimizedImage, UIButtonComponent, UISvgComponent],
+  templateUrl: './card.html',
+  styleUrl: './card.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiCardComponent {
+export class UICardComponent {
   imageUrl = input<string>('https://picsum.photos/723/416');
   label = input<string>('Label');
   title = input<string>('Title');

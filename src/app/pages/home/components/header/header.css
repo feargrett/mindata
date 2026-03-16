@@ -1,0 +1,9 @@
+@import '../../../../../../ui/components/theme/base.css';
+
+.header__title {
+  @apply font-inter text-on-background text-4xl font-bold;
+}
+
+.header__description {
+  @apply font-inter text-on-background-variant mt-2 text-base;
+}

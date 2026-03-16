@@ -7,11 +7,11 @@ import {
 
 @Component({
   selector: 'ui-button',
-  templateUrl: './ui-button.html',
-  styleUrl: './ui-button.css',
+  templateUrl: './button.html',
+  styleUrl: './button.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiButtonComponent {
+export class UIButtonComponent {
   disabled = input<boolean>(false);
   type = input<'button' | 'submit' | 'reset'>('button');
   variant = input<'filled' | 'basic'>('filled');
