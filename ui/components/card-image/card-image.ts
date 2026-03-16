@@ -58,4 +58,10 @@ export class UICardImageComponent {
    * Icon name to display in the button.
    */
   buttonIcon = input.required<IconName>();
+
+  /**
+   * Whether to prioritize image loading (for LCP optimization).
+   * @default false
+   */
+  priority = input<boolean>(false);
 }

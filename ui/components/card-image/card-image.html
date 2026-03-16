@@ -1,6 +1,11 @@
 <article class="card-image">
   <figure class="card-image__background">
-    <img [ngSrc]="imageUrl()" [alt]="imageAlt() || title()" fill />
+    <img
+      [ngSrc]="imageUrl()"
+      [alt]="imageAlt() || title()"
+      fill
+      [priority]="priority()"
+    />
   </figure>
 
   <div class="card-image__overlay" aria-hidden="true"></div>
