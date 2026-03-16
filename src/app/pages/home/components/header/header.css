@@ -6,8 +6,21 @@
 
 .header__title {
   @apply font-inter text-on-background text-4xl font-bold;
+  @apply mb-4;
+  width: 100%;
+}
+
+.header__content {
+  @apply flex flex-col gap-4;
+  @apply md:flex-row md:items-center md:justify-between md:gap-8;
 }
 
 .header__description {
-  @apply font-inter text-on-background-variant mt-2 text-base;
+  @apply font-inter text-on-background-variant text-base;
+  @apply flex-1;
+}
+
+.header__right {
+  @apply w-full;
+  @apply md:w-auto md:max-w-[280px];
 }

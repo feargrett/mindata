@@ -1,2 +1,7 @@
 <h2 class="header__title">{{ title() }}</h2>
-<p class="header__description">{{ description() }}</p>
+<div class="header__content">
+  <p class="header__description">{{ description() }}</p>
+  <div class="header__right">
+    <ng-content />
+  </div>
+</div>

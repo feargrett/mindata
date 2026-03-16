@@ -1,0 +1,26 @@
+@import '../../../theme/base.css';
+
+.search-container {
+  @apply relative flex w-full items-center;
+}
+
+.search-icon {
+  @apply pointer-events-none absolute left-3;
+  @apply text-on-background-variant;
+}
+
+.search-input {
+  @apply text-on-background h-10 w-full rounded-lg border-0 bg-gray-100;
+  @apply pr-4 pl-11;
+  @apply font-inter text-base;
+  @apply transition-all;
+  @apply outline-2 outline-offset-2 outline-transparent;
+
+  &::placeholder {
+    @apply text-gray-400;
+  }
+
+  &:focus-visible {
+    @apply outline-[color:var(--color-highlight)];
+  }
+}
