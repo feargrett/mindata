@@ -1,0 +1,21 @@
+<article class="card-image">
+  <img
+    class="card-image__background"
+    [ngSrc]="imageUrl()"
+    alt="Card image"
+    fill
+    priority
+  />
+
+  <div class="card-image__overlay"></div>
+
+  <div class="card-image__content">
+    <h3 class="card-image__title">{{ title() }}</h3>
+    <p class="card-image__description">{{ description() }}</p>
+
+    <ui-button variant="basic">
+      {{ buttonLabel() }}
+      <ui-svg [icon]="buttonIcon()" [width]="20" [height]="20" />
+    </ui-button>
+  </div>
+</article>

@@ -32,3 +32,33 @@
     }
   </div>
 </ui-section>
+
+<ui-section bgColor="gray">
+  <header class="mb-8 text-left">
+    <h2 class="font-inter text-on-background text-4xl font-bold">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+    </h2>
+    <p class="font-inter text-on-background-variant mt-2 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+      Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
+      ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam
+      quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
+      interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
+      sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis
+      orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros,
+      eget tempus orci facilisis id
+    </p>
+  </header>
+
+  <div class="grid grid-cols-1 gap-6 min-[460px]:grid-cols-2 lg:grid-cols-4">
+    @for (card of heroCardsData; track card.id) {
+      <ui-card-image
+        [imageUrl]="card.imageUrl"
+        [title]="card.title"
+        [description]="card.description"
+        [buttonLabel]="card.buttonLabel"
+        [buttonIcon]="card.buttonIcon"
+      />
+    }
+  </div>
+</ui-section>

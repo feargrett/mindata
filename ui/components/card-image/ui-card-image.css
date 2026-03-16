@@ -1,0 +1,29 @@
+@import '../theme/base.css';
+
+.card-image {
+  @apply relative flex flex-col overflow-hidden rounded-lg;
+  @apply aspect-[3/4];
+}
+
+.card-image__background {
+  @apply absolute inset-0 h-full w-full object-cover;
+}
+
+.card-image__overlay {
+  @apply absolute inset-0;
+  @apply bg-gradient-to-t from-black/80 via-black/40 to-transparent;
+}
+
+.card-image__content {
+  @apply relative z-10 mt-auto flex flex-col gap-4 p-6;
+}
+
+.card-image__title {
+  @apply font-inter text-2xl font-bold text-white;
+  @apply line-clamp-2;
+}
+
+.card-image__description {
+  @apply font-inter text-base text-white/90;
+  @apply line-clamp-3;
+}

@@ -1,1 +1,1 @@
-export type IconName = 'calendar';
+export type IconName = 'calendar' | 'download';

@@ -1,7 +1,9 @@
 @import '../theme/base.css';
 
+:host {
+  @apply flex flex-shrink-0;
+}
+
 svg {
-  @apply flex-shrink-0;
   color: inherit;
-  display: inline-block;
 }

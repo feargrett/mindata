@@ -6,6 +6,10 @@ import { IconName } from './icon-name.type';
   templateUrl: './ui-svg.html',
   styleUrl: './ui-svg.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    '[style.width.px]': 'width()',
+    '[style.height.px]': 'height()',
+  },
 })
 export class UiSvgComponent {
   icon = input.required<IconName>();
