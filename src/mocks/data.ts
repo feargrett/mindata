@@ -1,4 +1,5 @@
 export const data = {
+  imageUrl: 'https://picsum.photos/723/416?random=100',
   label: 'Lorem ipsum dolor sit amet',
   title:
     'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit',
@@ -9,6 +10,7 @@ export const data = {
 
 export const cardsData = Array.from({ length: 6 }, (_, i) => ({
   id: i + 1,
+  imageUrl: `https://picsum.photos/723/416?random=${i + 10}`,
   label: 'Lorem ipsum dolor sit amet',
   title: `Card ${i + 1}: Lorem ipsum dolor sit amet consectetur`,
   description:
@@ -16,7 +18,7 @@ export const cardsData = Array.from({ length: 6 }, (_, i) => ({
   buttonLabel: 'Lorem ipsum',
 }));
 
-export const heroCardsData = Array.from({ length: 4 }, (_, i) => ({
+export const imageCardsData = Array.from({ length: 4 }, (_, i) => ({
   id: i + 1,
   imageUrl: `https://picsum.photos/400/600?random=${i}`,
   title: `Hero Card ${i + 1}: Lorem ipsum dolor sit amet`,

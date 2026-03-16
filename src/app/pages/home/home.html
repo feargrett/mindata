@@ -1,5 +1,6 @@
 <ui-section bgColor="gray">
   <ui-card
+    [imageUrl]="cardData.imageUrl"
     [label]="cardData.label"
     [title]="cardData.title"
     [description]="cardData.description"
@@ -22,6 +23,7 @@
   >
     @for (card of cardsData; track card.id) {
       <ui-card
+        [imageUrl]="card.imageUrl"
         [label]="card.label"
         [title]="card.title"
         [description]="card.description"
@@ -51,7 +53,7 @@
   </header>
 
   <div class="grid grid-cols-1 gap-6 min-[460px]:grid-cols-2 lg:grid-cols-4">
-    @for (card of heroCardsData; track card.id) {
+    @for (card of imageCardsData; track card.id) {
       <ui-card-image
         [imageUrl]="card.imageUrl"
         [title]="card.title"
