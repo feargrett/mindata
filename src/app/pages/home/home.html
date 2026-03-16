@@ -5,6 +5,7 @@
     [title]="cardData.title"
     [description]="cardData.description"
     [buttonLabel]="cardData.buttonLabel"
+    [priority]="true"
   />
 </ui-section>
 
@@ -21,7 +22,7 @@
   <div
     class="grid grid-cols-1 gap-6 min-[460px]:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
   >
-    @for (card of cardsData; track card.id) {
+    @for (card of cardsData; track card.id; let idx = $index) {
       <ui-card
         [imageUrl]="card.imageUrl"
         [label]="card.label"
@@ -30,6 +31,7 @@
         [withPadding]="false"
         [showShadow]="false"
         align="vertical"
+        [priority]="idx < 3"
       />
     }
   </div>

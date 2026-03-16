@@ -1,6 +1,12 @@
 <article class="card" [class]="cardClasses()">
   <div class="card__image">
-    <img [ngSrc]="imageUrl()" alt="Card image" width="723" height="416" />
+    <img
+      [ngSrc]="imageUrl()"
+      alt="Card image"
+      width="723"
+      height="416"
+      [priority]="priority()"
+    />
   </div>
 
   <div class="card__content">

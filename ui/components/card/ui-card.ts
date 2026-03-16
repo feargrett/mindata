@@ -25,6 +25,7 @@ export class UiCardComponent {
   showShadow = input<boolean>(true);
   withPadding = input<boolean>(true);
   align = input<'auto' | 'vertical'>('auto');
+  priority = input<boolean>(false);
 
   cardClasses = computed(() => {
     const classes = [];
