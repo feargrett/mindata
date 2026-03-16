@@ -5,7 +5,7 @@ import { UISvgComponent } from '../svg/svg';
 import type { IconName } from '../svg/icon-name.type';
 
 /**
- * Hero-style card with full background image and overlay text.
+ * Card with full background image and overlay text.
  * Ideal for featured content and call-to-action sections.
  *
  * @example
