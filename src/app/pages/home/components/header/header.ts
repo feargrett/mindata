@@ -6,7 +6,7 @@ import { Component, ChangeDetectionStrategy, input } from '@angular/core';
   styleUrl: './header.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'text-left',
+    class: 'text-left mb-8',
   },
 })
 export class HeaderComponent {

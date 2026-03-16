@@ -1,5 +1,9 @@
 @import '../../../../../../ui/components/theme/base.css';
 
+:host {
+  @apply block;
+}
+
 .header__title {
   @apply font-inter text-on-background text-4xl font-bold;
 }
