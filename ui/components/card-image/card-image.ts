@@ -34,6 +34,12 @@ export class UICardImageComponent {
   imageUrl = input<string>('https://picsum.photos/400/600');
 
   /**
+   * Alternative text for the background image.
+   * If not provided, falls back to the title.
+   */
+  imageAlt = input<string>();
+
+  /**
    * Card title displayed over the image.
    */
   title = input.required<string>();

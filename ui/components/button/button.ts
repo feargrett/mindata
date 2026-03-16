@@ -51,6 +51,12 @@ export class UIButtonComponent {
   variant = input<'filled' | 'basic'>('filled');
 
   /**
+   * ARIA label for accessibility.
+   * Required when button contains only icons.
+   */
+  ariaLabel = input<string>();
+
+  /**
    * Computed CSS class based on the selected variant.
    * @internal
    */

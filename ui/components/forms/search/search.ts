@@ -22,4 +22,24 @@ export class UISearchComponent {
    * Placeholder text for the input.
    */
   placeholder = input<string>('Search...');
+
+  /**
+   * Label for the input (for screen readers).
+   */
+  label = input<string>('Search');
+
+  /**
+   * ARIA label for the input.
+   */
+  ariaLabel = input<string>();
+
+  /**
+   * ID for the input element.
+   */
+  inputId = input<string>('search-input');
+
+  /**
+   * Name attribute for the input.
+   */
+  name = input<string>('search');
 }

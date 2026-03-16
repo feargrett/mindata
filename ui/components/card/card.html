@@ -2,7 +2,7 @@
   <div class="card__image">
     <img
       [ngSrc]="imageUrl()"
-      alt="Card image"
+      [alt]="imageAlt() || title()"
       width="723"
       height="416"
       [priority]="priority()"
@@ -11,11 +11,11 @@
 
   <div class="card__content">
     <div class="card__header">
-      <ui-svg class="card__icon" icon="calendar" />
+      <ui-svg class="card__icon" icon="calendar" aria-hidden="true" />
       <span class="card__label">{{ label() }}</span>
     </div>
 
-    <h2 class="card__title">{{ title() }}</h2>
+    <h3 class="card__title">{{ title() }}</h3>
 
     <p class="card__description">{{ description() }}</p>
 

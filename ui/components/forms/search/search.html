@@ -1,4 +1,18 @@
-<div class="search-container">
-  <ui-svg icon="search" [width]="16" [height]="16" class="search-icon" />
-  <input type="text" class="search-input" [placeholder]="placeholder()" />
+<div class="search-container" role="search">
+  <label [for]="inputId()" class="sr-only">{{ label() }}</label>
+  <ui-svg
+    icon="search"
+    [width]="16"
+    [height]="16"
+    class="search-icon"
+    aria-hidden="true"
+  />
+  <input
+    type="search"
+    [id]="inputId()"
+    [name]="name()"
+    class="search-input"
+    [placeholder]="placeholder()"
+    [attr.aria-label]="ariaLabel() || label()"
+  />
 </div>

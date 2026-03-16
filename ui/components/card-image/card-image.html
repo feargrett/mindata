@@ -2,7 +2,7 @@
   <img
     class="card-image__background"
     [ngSrc]="imageUrl()"
-    alt="Card image"
+    [alt]="imageAlt() || title()"
     fill
   />
 

@@ -53,6 +53,12 @@ export class UICardComponent {
   imageUrl = input<string>('https://picsum.photos/723/416');
 
   /**
+   * Alternative text for the card image.
+   * If not provided, falls back to the title.
+   */
+  imageAlt = input<string>();
+
+  /**
    * Small label text displayed with an icon.
    * @default 'Label'
    */

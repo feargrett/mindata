@@ -1,5 +1,10 @@
 @import '../../../theme/base.css';
 
+.sr-only {
+  @apply absolute h-px w-px overflow-hidden border-0 p-0 whitespace-nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
 .search-container {
   @apply relative flex w-full items-center;
 }
