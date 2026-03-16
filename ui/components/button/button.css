@@ -6,11 +6,10 @@ button {
   @apply font-inter text-base font-bold;
   @apply transition-all;
   @apply cursor-pointer;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  @apply outline-2 outline-offset-2 outline-transparent;
 
   &:focus-visible {
-    outline-color: var(--color-highlight);
+    @apply outline-[color:var(--color-highlight)];
   }
 
   &:disabled {
