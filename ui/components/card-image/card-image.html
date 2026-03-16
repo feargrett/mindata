@@ -1,26 +1,30 @@
-<article class="card-image">
-  <figure class="card-image__background">
-    <img
-      [ngSrc]="imageUrl()"
-      [alt]="imageAlt() || title()"
-      fill
-      [priority]="priority()"
-    />
-  </figure>
+@defer (on viewport) {
+  <article class="card-image">
+    <figure class="card-image__background">
+      <img
+        [ngSrc]="imageUrl()"
+        [alt]="imageAlt() || title()"
+        fill
+        [priority]="priority()"
+      />
+    </figure>
 
-  <div class="card-image__overlay" aria-hidden="true"></div>
+    <div class="card-image__overlay" aria-hidden="true"></div>
 
-  <section class="card-image__content">
-    <header>
-      <h3 class="card-image__title">{{ title() }}</h3>
-      <p class="card-image__description">{{ description() }}</p>
-    </header>
+    <section class="card-image__content">
+      <header>
+        <h3 class="card-image__title">{{ title() }}</h3>
+        <p class="card-image__description">{{ description() }}</p>
+      </header>
 
-    <footer>
-      <ui-button variant="basic">
-        {{ buttonLabel() }}
-        <ui-svg [icon]="buttonIcon()" aria-hidden="true" />
-      </ui-button>
-    </footer>
-  </section>
-</article>
+      <footer>
+        <ui-button variant="basic">
+          {{ buttonLabel() }}
+          <ui-svg [icon]="buttonIcon()" aria-hidden="true" />
+        </ui-button>
+      </footer>
+    </section>
+  </article>
+} @placeholder {
+  <div class="card-image-placeholder"></div>
+}

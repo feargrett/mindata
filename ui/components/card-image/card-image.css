@@ -1,5 +1,10 @@
 @import '../../theme/base.css';
 
+.card-image-placeholder {
+  @apply rounded-lg bg-gray-100;
+  @apply h-full w-full;
+}
+
 .card-image {
   @apply relative flex flex-col overflow-hidden rounded-lg;
   @apply aspect-[3/4];

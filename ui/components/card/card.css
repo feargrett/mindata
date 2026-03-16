@@ -1,5 +1,10 @@
 @import '../../theme/base.css';
 
+.card-placeholder {
+  @apply rounded-lg bg-gray-100;
+  @apply h-full w-full;
+}
+
 .card {
   @apply flex flex-col gap-6 rounded-lg bg-white;
   @apply lg:grid lg:grid-cols-2;

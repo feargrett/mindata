@@ -1,27 +1,33 @@
-<article class="card" [class]="cardClasses()">
-  <figure class="card__image">
-    <img
-      [ngSrc]="imageUrl()"
-      [alt]="imageAlt() || title()"
-      fill
-      [priority]="priority()"
-    />
-  </figure>
+@defer (on viewport) {
+  <article class="card" [class]="cardClasses()">
+    <figure class="card__image">
+      <img
+        [ngSrc]="imageUrl()"
+        [alt]="imageAlt() || title()"
+        fill
+        [priority]="priority()"
+      />
+    </figure>
 
-  <section class="card__content">
-    <header class="card__header">
-      <ui-svg class="card__icon" icon="calendar" aria-hidden="true" />
-      <time class="card__label">{{ label() }}</time>
-    </header>
+    <section class="card__content">
+      <header class="card__header">
+        <ui-svg class="card__icon" icon="calendar" aria-hidden="true" />
+        <time class="card__label">{{ label() }}</time>
+      </header>
 
-    <h3 class="card__title">{{ title() }}</h3>
+      <h3 class="card__title">{{ title() }}</h3>
 
-    <p class="card__description">{{ description() }}</p>
+      <p class="card__description">{{ description() }}</p>
 
-    @if (buttonLabel()) {
-      <footer class="card__footer">
-        <ui-button [disabled]="buttonDisabled()">{{ buttonLabel() }}</ui-button>
-      </footer>
-    }
-  </section>
-</article>
+      @if (buttonLabel()) {
+        <footer class="card__footer">
+          <ui-button [disabled]="buttonDisabled()">{{
+            buttonLabel()
+          }}</ui-button>
+        </footer>
+      }
+    </section>
+  </article>
+} @placeholder {
+  <div class="card-placeholder"></div>
+}
