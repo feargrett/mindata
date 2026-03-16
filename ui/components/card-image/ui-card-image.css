@@ -11,7 +11,7 @@
 
 .card-image__overlay {
   @apply absolute inset-0;
-  @apply bg-gradient-to-t from-black/80 via-black/40 to-transparent;
+  @apply bg-gradient-to-t from-black via-black/20 to-transparent;
 }
 
 .card-image__content {
