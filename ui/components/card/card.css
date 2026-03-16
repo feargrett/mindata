@@ -19,23 +19,18 @@
 }
 
 .card__image {
-  @apply w-full flex-shrink-0;
+  @apply relative w-full flex-shrink-0;
   @apply aspect-[16/9];
   @apply lg:aspect-auto lg:h-full;
-  @apply m-0;
+  @apply m-0 overflow-hidden rounded-lg;
 
   img {
-    @apply h-auto w-full rounded-lg object-cover;
-    @apply lg:h-full;
+    @apply object-cover;
   }
 }
 
 .card--vertical .card__image {
   @apply !aspect-[16/9] !h-auto;
-
-  img {
-    @apply !h-auto;
-  }
 }
 
 .card__content {
