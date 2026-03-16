@@ -1,20 +1,21 @@
 <article class="card-image">
-  <img
-    class="card-image__background"
-    [ngSrc]="imageUrl()"
-    [alt]="imageAlt() || title()"
-    fill
-  />
+  <figure class="card-image__background">
+    <img [ngSrc]="imageUrl()" [alt]="imageAlt() || title()" fill />
+  </figure>
 
-  <div class="card-image__overlay"></div>
+  <div class="card-image__overlay" aria-hidden="true"></div>
 
-  <div class="card-image__content">
-    <h3 class="card-image__title">{{ title() }}</h3>
-    <p class="card-image__description">{{ description() }}</p>
+  <section class="card-image__content">
+    <header>
+      <h3 class="card-image__title">{{ title() }}</h3>
+      <p class="card-image__description">{{ description() }}</p>
+    </header>
 
-    <ui-button variant="basic">
-      {{ buttonLabel() }}
-      <ui-svg [icon]="buttonIcon()" />
-    </ui-button>
-  </div>
+    <footer>
+      <ui-button variant="basic">
+        {{ buttonLabel() }}
+        <ui-svg [icon]="buttonIcon()" aria-hidden="true" />
+      </ui-button>
+    </footer>
+  </section>
 </article>

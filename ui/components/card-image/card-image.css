@@ -7,6 +7,7 @@
 
 .card-image__background {
   @apply absolute inset-0 h-full w-full object-cover;
+  @apply m-0;
 }
 
 .card-image__overlay {
@@ -16,6 +17,14 @@
 
 .card-image__content {
   @apply relative z-10 mt-auto flex flex-col gap-4 p-6;
+
+  header {
+    @apply m-0 flex flex-col gap-2;
+  }
+
+  footer {
+    @apply m-0;
+  }
 }
 
 .card-image__title {

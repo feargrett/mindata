@@ -22,6 +22,7 @@
   @apply w-full flex-shrink-0;
   @apply aspect-[16/9];
   @apply lg:aspect-auto lg:h-full;
+  @apply m-0;
 
   img {
     @apply h-auto w-full rounded-lg object-cover;
@@ -44,6 +45,7 @@
 
 .card__header {
   @apply flex items-center gap-2;
+  @apply m-0;
 }
 
 .card__icon {

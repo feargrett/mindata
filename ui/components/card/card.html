@@ -1,5 +1,5 @@
 <article class="card" [class]="cardClasses()">
-  <div class="card__image">
+  <figure class="card__image">
     <img
       [ngSrc]="imageUrl()"
       [alt]="imageAlt() || title()"
@@ -7,22 +7,22 @@
       height="416"
       [priority]="priority()"
     />
-  </div>
+  </figure>
 
-  <div class="card__content">
-    <div class="card__header">
+  <section class="card__content">
+    <header class="card__header">
       <ui-svg class="card__icon" icon="calendar" aria-hidden="true" />
-      <span class="card__label">{{ label() }}</span>
-    </div>
+      <time class="card__label">{{ label() }}</time>
+    </header>
 
     <h3 class="card__title">{{ title() }}</h3>
 
     <p class="card__description">{{ description() }}</p>
 
     @if (buttonLabel()) {
-      <div class="card__footer">
+      <footer class="card__footer">
         <ui-button [disabled]="buttonDisabled()">{{ buttonLabel() }}</ui-button>
-      </div>
+      </footer>
     }
-  </div>
+  </section>
 </article>
