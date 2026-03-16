@@ -21,7 +21,7 @@
 .card__image {
   @apply w-full flex-shrink-0;
   @apply lg:w-[723px];
-  @apply aspect-[723/416];
+  @apply aspect-[16/9];
 
   img {
     @apply h-auto w-full rounded-lg object-cover;
