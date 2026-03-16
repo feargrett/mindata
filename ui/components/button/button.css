@@ -1,4 +1,4 @@
-@import '../theme/base.css';
+@import '../../theme/base.css';
 
 button {
   @apply h-10 gap-2.5 rounded-lg px-2 opacity-100;

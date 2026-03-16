@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '../ui/components/theme/base.css';
+@import '../ui/theme/base.css';
 
 body {
   @apply font-inter text-base text-gray-900;

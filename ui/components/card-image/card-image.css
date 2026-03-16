@@ -1,4 +1,4 @@
-@import '../theme/base.css';
+@import '../../theme/base.css';
 
 .card-image {
   @apply relative flex flex-col overflow-hidden rounded-lg;

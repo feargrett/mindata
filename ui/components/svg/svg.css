@@ -1,4 +1,4 @@
-@import '../theme/base.css';
+@import '../../theme/base.css';
 
 :host {
   @apply flex flex-shrink-0;

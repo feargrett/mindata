@@ -1,4 +1,4 @@
-@import '../theme/base.css';
+@import '../../theme/base.css';
 
 .card {
   @apply flex flex-col gap-6 rounded-lg bg-white;

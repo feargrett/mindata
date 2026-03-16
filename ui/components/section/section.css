@@ -1,4 +1,4 @@
-@import '../theme/base.css';
+@import '../../theme/base.css';
 
 .section {
   @apply p-4 py-8;
