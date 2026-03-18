@@ -7,7 +7,7 @@
 
 .card {
   @apply flex flex-col gap-6 rounded-lg bg-white;
-  @apply lg:grid lg:grid-cols-2;
+  @apply lg:grid lg:grid-cols-2 lg:items-center;
   @apply max-w-full;
 }
 
@@ -26,7 +26,6 @@
 .card__image {
   @apply relative w-full flex-shrink-0;
   @apply aspect-[16/9];
-  @apply lg:aspect-auto lg:h-full;
   @apply m-0 overflow-hidden rounded-lg;
 
   img {
